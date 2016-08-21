@@ -1,1 +1,1 @@
-web grunt server
+web: runt build && node web.js

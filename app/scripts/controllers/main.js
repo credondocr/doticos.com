@@ -14,13 +14,13 @@ angular.module('doticoscomApp')
       method: 'GET',
       url: 'https://doticos.herokuapp.com/players'
     }).then(function successCallback(response) {
-      $scope.names = [];
+      $scope.players = [];
       response.data.map(function (item) {
         $http({
           method: 'GET',
           url: 'https://doticos.herokuapp.com/accountInfo/' + item.steam_base_64_id
         }).then(function successCallback(data){
-          $scope.names.push(data.data.response.players[0].personaname);
+          $scope.players.push(data.data.response.players[0]);
         });
 
       });

@@ -4658,7 +4658,6 @@ select {
 /* ABOUT */
 .about {
   position: relative;
-  padding-top: 55px;
 }
 .about .preamble h4 {
   margin-top: 0;

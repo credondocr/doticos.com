@@ -1,92 +1,311 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-  </head>
-  <body ng-app="doticoscomApp">
-    <!--[if lte IE 8]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+  <title>FC Football template</title>
 
-    <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/owl.carousel.css">
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
+  <!-- Google Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-            <a class="navbar-brand" href="#/">doticoscom</a>
-          </div>
+  <!--[if IE 9]>
+  <script src="js/media.match.min.js"></script>
+  <![endif]-->
+</head>
 
-          <div class="collapse navbar-collapse" id="js-navbar-collapse">
+<body ng-app="doticoscomApp">
+<div id="main-wrapper">
 
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
+  <!-- Start Header -->
+  <header id="header" class="second-version">
+    <div class="container">
+      <div class="header-logo">
+        <a href="index.html"><img src="img/logo.png" alt=""></a>
+        <div class="triangle-left"></div>
+        <div class="triangle-right"></div>
+      </div>
+    </div>
+    <div class="header-toolbar">
+      <div class="container">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="header-user pull-right">
+            <ul class="custom-list">
+              <li>
+                <div class="header-user-forms">
+                  <div class="header-login">
+                    <a href="#" class="">Login</a>
+                    <div>
+                      <form action="#" class="default-form">
+                        <p class="form-row">
+                          <input type="text" class="form-control" placeholder="Username">
+                        </p>
+                        <p class="form-row">
+                          <input type="password" class="form-control" placeholder="Password">
+                        </p>
+                        <p class="form-row">
+                          <input type="submit" class="btn full-width" value="Login">
+                        </p>
+                        <a href="#" class="btn btn-link">Forgot Password?</a>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="header-register">
+                    <a href="#" class="">Register</a>
+                    <div>
+                      <form action="#" class="default-form">
+                        <p class="form-row">
+                          <input type="text" class="form-control" placeholder="Username">
+                        </p>
+                        <p class="form-row">
+                          <input type="email" class="form-control" placeholder="Email">
+                        </p>
+                        <p class="form-row">
+                          <input type="password" class="form-control" placeholder="Password">
+                        </p>
+                        <input type="submit" class="btn full-width" value="Register">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="container">
-    <div ng-view=""></div>
-    </div>
-
-    <div class="footer">
+    <div class="header-navbar">
       <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <nav class="navigation">
+            <ul class="list-inline text-center custom-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Reglamento</a></li>
+              <li><a href="#">Acerca de</a></li>
+            </ul>
+          </nav>
+          <ul class="social list-inline">
+            <li><a href="https://www.facebook.com/groups/dotacr"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/doticos"><i class="fa fa-twitter"></i></a></li>
+          </ul>
+          <button class="navbar-toggle">
+            <i class="fa fa-list"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- Start Intro -->
+  <div class="intro">
+    <div id="home-slider" class="fixed-nav owl-carousel owl-theme">
+      <div class="item">
+
+        <!-- Start Video Background -->
+        <div id="video_intro" data-vide-bg="video/Dota" data-vide-options="position: 0% 50%"></div>
+        <div class="video_gradient"></div>
+        <!-- End Video Background -->
+
+        <div class="slide-content col-lg-6 col-lg-offset-3 col-md-12 col-sm-12 text-center">
+          <h1>Una liga. Una meta.</h1>
+          <p>Ser el mejor jugador de Costa Rica.</p>
+        </div>
       </div>
     </div>
 
+  </div>
+  <!-- End Intro -->
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <!-- Start About -->
+  <div id="about" class="about">
 
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
+    <!-- Start Container -->
+    <div class="container">
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+      <!-- Start Preamble -->
+      <div class="preamble text-center col-lg-10 col-lg-offset-1">
+        <h4>Acerca de la liga</h4>
+        <p>Esta liga es sin animos de lucro con el objetivo de llevar las estadísticas de la misma y premiar al final de la temporada ya sea de forma simbolica a los mejores jugadores de la liga Doticos</p>
+      </div>
+      <!-- End Preamble -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <!-- endbuild -->
+    </div>
+    <!-- End Container -->
+
+    <!-- Start Nav-Tabs -->
+    <ul class="nav nav-tabs list-inline horizontal-tab" role="tablist">
+      <li class=""><a href="#trainings" role="tab" data-toggle="tab">Scoreboard</a></li>
+      <li class="active"><a href="#matches" role="tab" data-toggle="tab">Juegos</a></li>
+    </ul>
+    <!-- End Nav-Tabs -->
+
+    <!-- Start Tab-Content -->
+    <div class="tab-content">
+      <div class="container">
+        <div class="tab-pane fade active in" id="trainings">
+          <div ng-view="main"></div>
+        </div>
+        <!-- End Matches -->
+
+        <!-- Start Trainings -->
+        <div class="tab-pane fade" id="matches">
+          Coming Soon
+        </div>
+        <!-- End Trainings -->
+
+      </div>
+    </div>
+    <!-- End Tab-Content -->
+
+  </div>
+  <!-- End About -->
+
+
+
+  <!-- Start News -->
+  <div id="news" class="news">
+    <div class="container">
+
+      <!-- Start Heading -->
+      <div class="heading col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h4 class="border pull-left">Latest News</h4>
+        <a href="#" class="rest pull-right"><span>See all news</span><i class="fa fa-arrow-circle-right"></i></a>
+      </div>
+      <!-- End Heading -->
+
+      <!-- Start Single-News -->
+      <div class="single-news col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <article>
+          <img src="img/article-thumbnail.jpg" alt="" class="thumbnail">
+          <div class="article-content">
+            <h5><a href="#">#AFCvHCFC: live audio on Arsenal Player</a></h5>
+            <p>Theo Walcott and Serge Gnabry in line to make return to action for club's second string at Meadow Park on Friday evening</p>
+          </div>
+        </article>
+      </div>
+      <!-- End Single-News -->
+
+      <!-- Start Single-News -->
+      <div class="single-news col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <article>
+          <img src="img/article-thumbnail2.jpg" alt="" class="thumbnail">
+          <div class="article-content">
+            <h5><a href="#">Welbeck - I’m loving this new adventure</a></h5>
+            <p>Theo Walcott and Serge Gnabry in line to make return to action for club's second string at Meadow Park on Friday evening</p>
+          </div>
+        </article>
+      </div>
+      <!-- End Single-News -->
+
+      <!-- Start Single-News -->
+      <div class="single-news col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <article>
+          <img src="img/article-thumbnail3.jpg" alt="" class="thumbnail">
+          <div class="article-content">
+            <h5><a href="#">#AFCvHCFC: live audio on Arsenal Player</a></h5>
+            <p>Theo Walcott and Serge Gnabry in line to make return to action for club's second string at Meadow Park on Friday evening</p>
+          </div>
+        </article>
+      </div>
+      <!-- End Single-News -->
+
+    </div>
+  </div>
+  <!-- End News -->
+
+
+
+  <!-- Start Footer -->
+  <footer id="footer">
+    <div class="container">
+      <!-- Start Sposnors -->
+      <div class="sponsors clearfix">
+        <h5 class="text-center">Sponsors</h5>
+        <div class="sponsor-logo text-center col-lg-2 col-md-2 col-sm-4">
+          <img src="img/partner.png" alt="">
+        </div>
+        <div class="sponsor-logo text-center col-lg-2 col-md-2 col-sm-4">
+          <img src="img/partner2.png" alt="">
+        </div>
+        <div class="sponsor-logo text-center col-lg-2 col-md-2 col-sm-4">
+          <img src="img/partner3.png" alt="">
+        </div>
+        <div class="sponsor-logo text-center col-lg-2 col-md-2 col-sm-4">
+          <img src="img/partner4.png" alt="">
+        </div>
+        <div class="sponsor-logo text-center col-lg-2 col-md-2 col-sm-4">
+          <img src="img/partner5.png" alt="">
+        </div>
+        <div class="sponsor-logo text-center col-lg-2 col-md-2 col-sm-4">
+          <img src="img/partner6.png" alt="">
+          redondo
+        </div>
+      </div>
+      <!-- End Sponsors -->
+
+    </div>
+
+    <!-- Start Copyrights -->
+    <div class="copyrights clearfix text-center">
+      <p class="col-lg-12">© Copyright. All Rights Reserved</p>
+    </div>
+    <!-- End Copyrights -->
+
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Start Back-to-Top -->
+  <a href="#" id="back-to-top">
+    <i class="fa fa-angle-up"></i>
+  </a>
+  <!-- End Back-to-Top -->
+
+</div>
+<!-- end #main-wrapper -->
+
+<!-- Scripts -->
+<script src="js/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.ba-outside-events.min.js"></script>
+<script src="js/tab.js"></script>
+<script src='js/bootstrap-datepicker.js'></script>
+<script src="js/jquery.vide.min.js"></script>
+
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-touch/angular-touch.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/main.js"></script>
+<script src="scripts/controllers/about.js"></script>
+<!-- endbuild -->
+
 </body>
 </html>
